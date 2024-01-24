@@ -1,0 +1,137 @@
+#contact-banner {
+    background-image:
+            linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%);
+            /* url('../images/students-banner-image.png'); */
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact-banner > h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+   #contact-banner .url-route {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+  
+    color: #FFFFFF;
+  }
+  
+  #contact-banner .url-route > a {
+    color: #ffffff;
+  }
+  #contact-list {
+    margin: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #nav1{
+    color: #00054B;
+    text-decoration:none;/*per te hequr ate underline*/
+  }
+  #nav1:hover{
+    color:#bf8fff;
+  }
+  .btn.contact{
+    background-color: gray;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: normal;
+    padding: 19px 49px 18px 60px;
+  }
+  .btn:hover.contact{
+    background-color: #fff;
+    color: gray;
+    border-color: gray;
+  }
+  
+    h2{
+      font-size: 27px;
+    }
+    .btn.account{
+      background-color: #fff;
+      border-color: #727CF5;
+      color: #727CF5;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: -5px;
+    }
+    .btn:hover{
+      background-color: #727CF5;
+      color: #fff;
+    }
+    /* Styles for the search button */
+    .search-button {
+      background-color: #727CF5;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    /* Styles for the hover and focus states of the search button */
+    .search-button:hover{
+      background-color: #fff;
+      color: #727CF5;
+    }
+    .search-button:focus {
+      background-color: #0062cc;
+      color: #fff;
+      outline: none;
+    }
+    .collapse{
+      width: 10px;
+    }
+    
+    .jst {
+      justify-content: center;
+    }
+
+    .float-start{
+        margin-top: 40px;
+    }
+
+    .info{
+        margin-top: 40px;
+    }
+     .infolist{
+        list-style: none;
+    }
+    .contact{
+        color: 00054B;
+    }
+    .base{
+        color: 00054B;
+    }
+.input-group-text{
+    height: 37.5px;
+}    
+.needs-validation{
+        justify-content: center;
+    }
+
+    .container.list{
+        margin-top: 30px;
+    } 
+.position-relative{
+    margin-left: 70px;
+}

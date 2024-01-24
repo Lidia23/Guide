@@ -1,0 +1,135 @@
+main #banner-1 {
+    background-image:
+            linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%);
+            /* url('../images/students-banner-image.png'); */
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #banner-1 > h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main #banner-1 .url-route {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+main #banner-1 .url-route > a {
+    color: #ffffff;
+}
+
+main #idea {
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    width: 50%;
+    margin: 60px 100px;
+}
+
+main #idea .info h1, main #difficulties h1, main #goal h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 70px;
+    color: #787878;
+    margin-bottom: 40px;
+}
+
+main #idea img {
+    width: 500px;
+    height: auto;
+}
+
+main #idea .info p, main #difficulties p,  main #goal p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #949494;
+}
+
+main #difficulties {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0%, rgba(0, 102, 255, 0.37) 100%);
+    /* url('../images/universityFull.svg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+main #difficulties .info {
+    justify-content: center;
+}
+
+
+main #difficulties .img {
+    width: 50%;
+    order: -1;
+}
+
+main #difficulties h1{
+    color: white;
+}
+
+main #difficulties p {
+    color: white;
+}
+
+main #goal {
+    margin: 5% 20%;
+    text-align: center;
+}
+
+main #goal h1 {
+    color: black;
+}
+
+@media screen and (max-width: 1300px) {
+    main #idea img, main #difficulties div.img {
+       display: none;
+    }
+
+
+    .info {
+        width: 100%;
+        margin: 20px 50px;
+    }
+
+    main #idea .info h1, main #difficulties h1, main #goal h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    main #idea .info p, main #difficulties p,  main #goal p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    main #goal{
+        margin: 5% 10%;
+    }
+}

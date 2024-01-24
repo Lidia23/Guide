@@ -1,0 +1,78 @@
+main #university-banner {
+    background-image:
+            linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%);
+            /* url('../images/students-banner-image.png'); */
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: -60px;
+}
+
+main #university-banner > h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main #university-banner .url-route {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+main #university-banner .url-route > a {
+    color: #ffffff;
+}
+
+
+section#university-list {
+    margin: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section#university-list .university {
+    padding: 2.5em 1.6em;
+    background: rgba(217, 217, 217, 0.42);
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1.8em;
+}
+section#university-list .university h6 {
+    margin: 1.8em 0;
+}
+section#university-list .university img{
+    width: 314px;
+    height: 248px;
+}
+
+section#university-list .university  ul {
+    list-style-type: none;
+    column-count: 2;
+}
+section#university-list .university  ul  li  a {
+    text-decoration: none;
+}
+
+section#university-list .university  ul  li  a:link, section#university-list .university  ul  li  a:visited,
+section#university-list .university  ul  li  a:hover, section#university-list .university  ul  li  a:active{
+    color: #51A2ED;
+}
+
+main #university-list a{
+    text-decoration: none;
+    color:black;
+}

@@ -1,0 +1,60 @@
+.lmain{
+    background-color: white;
+    padding:20px 20px;
+    width:40%;
+}
+
+.container.login{
+    background-color:white;
+    padding:20px;
+    text-align:left;
+    margin-top: 80px;
+
+
+}
+
+#validation_box{
+
+    display:none;  
+    background-color: white;
+    color:black;
+    position:relative;
+    padding:10px;
+    margin-top:20px;
+    text-align:left;
+
+
+}
+
+#validation_box p{
+    font-size:14px;
+    
+}
+
+.valid{
+    color:#7fcf37;
+}
+
+.valid::before{
+    position:relative;
+    left: -8px;
+    top:3px;   
+
+}
+
+.invalid{
+    color:gray;
+}
+
+.invalid::before{
+    position :relative;
+    left:-8px;
+    top: 3px;
+
+}
+#uni{
+    float: right;
+}
+#formi{
+    margin-top: 90px;
+}

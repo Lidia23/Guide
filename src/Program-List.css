@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+main #program-banner {
+    background-image:
+            linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%);
+            
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #program-banner > h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main #program-banner .url-route {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+main #program-banner .url-route > a {
+    color: #ffffff;
+}
+
+
+section#program-list {
+    margin: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section#program-list .program {
+    padding: 2.5em 1.6em;
+    background: rgba(217, 217, 217, 0.42);
+    margin-right:  1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1.8em;
+}
+section#program-list .program h6 {
+    margin: 1.8em 0;
+}
+section#program-list .program img{
+    width: 314px;
+    height: 248px;
+}
+
+section#program-list .program  ul {
+    list-style-type: none;
+    column-count: 2;
+}
+section#program-list .program  ul  li  a {
+    text-decoration: none;
+}
+
+section#program-list .program  ul  li  a:link, section#program-list .program  ul  li  a:visited,
+section#program-list .program  ul  li  a:hover, section#program-list .program  ul  li  a:active{
+    color: #51A2ED;
+}
+
+main #program-list a {
+    text-decoration: none;
+    color:black;
+}  

@@ -1,0 +1,12 @@
+section#university-list .university  ul {
+    list-style-type: none;
+    column-count: 2;
+}
+section#university-list .university  ul  li  a {
+    text-decoration: none;
+}
+
+section#university-list .university  ul  li  a:link, section#university-list .university  ul  li  a:visited,
+section#university-list .university  ul  li  a:hover, section#university-list .university  ul  li  a:active{
+    color: #51A2ED;
+}
