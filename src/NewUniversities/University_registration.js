@@ -1,16 +1,41 @@
-import './LogIn.css';
+import '../LogIn.css';
+import React, { useState } from 'react';
+import Offers from '../Universities/Offers';
+import { upload } from '@testing-library/user-event/dist/upload';
 
-export default function University_registration() {
+export default function University_registration(props) {
+    const[imgUploaded, setImgUploaded] = useState();
+    const handleUpload = (event) => {
+        console.log(event.target.files);
+        setImgUploaded(URL.createObjectURL(event.target.files[0]));
+    }
+    const [enteredName, setEnteredName] = useState('');
+    const nameChangeHandler = (event) => {
+        setEnteredName(event.target.value);
+    }
+    // const [enteredImg, setEnteredImg] = useState('');
+    // const imgChangeHandler = (event) => {
+    //     setEnteredImg(event.target.value);
+    // }
+    const submitHandler = (event) => {
+        event.preventDefault();
+        const uniData = {
+            image: imgUploaded,
+            name: enteredName,
+            // offers: <Offers />,
+        };
+        props.onSaveUniData(uniData);
+        setImgUploaded('');
+        setEnteredName('');
+        // <Offers />
+    };
     return (
         <body>
-
             <div id="uni-register">
-
                 <h3 class="text-center font-weight-bold display-6">Registration Form about University</h3>
                 <hr />
                 <br />
                 <br />
-
                 <div class="container-fluid">
                     <div class="rows" >
 
@@ -22,10 +47,16 @@ export default function University_registration() {
                     <section class="row justify-content-lg-start">
 
                         <section class="col-12 col-sm-6 col-md-11">
-                            <form class="form-container ">
+                            <form class="form-container" onSubmit={submitHandler}>
+                                <div class="form-group" >
+                                    <label for="exch_ptogram" class="h4 font-weight-bold" >Image:</label>
+                                    <input type="file" class="form-control" onChange={handleUpload} id="exch_program" aria-describeby="usernameHelp" />
+                                    <img src={imgUploaded} />
+                                    <br />
+                                </div>
                                 <div class="form-group" >
                                     <label for="exch_ptogram" class="h4 font-weight-bold" >Name:</label>
-                                    <input type="text" class="form-control" id="exch_program" aria-describeby="usernameHelp" placeholder="e.g. Exchange Program in Computer Science" />
+                                    <input type="text" class="form-control" value={enteredName} onChange={nameChangeHandler} id="exch_program" aria-describeby="usernameHelp" placeholder="e.g. University of Tirana" />
                                     <br />
                                 </div>
                                 <div class="form-group ">
@@ -52,7 +83,9 @@ export default function University_registration() {
                                     <label for="courses" class="h4 font-weight-bold">Courses</label>
                                     <textarea class="form-control" id="courses" cols="50" rows="12" placeholder="Give a description of courses a study program consists of (what is about, duration, total hours, credits...)"></textarea>
                                 </div>
-
+                                <div class="form-group" >
+                                    <button class="btn subscribe" type='submit' href="universitetet">Post</button>
+                                </div>
                             </form>
 
                         </section>

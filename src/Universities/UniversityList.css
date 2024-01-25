@@ -1,0 +1,12 @@
+.expenses-list__fallback {
+    color: white;
+    text-align: center;
+}
+section#university-list {
+    margin: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}

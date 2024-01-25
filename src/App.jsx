@@ -10,7 +10,8 @@ import Contact from './Contact';
 import SignUp from './SignUp';
 import LogIn from './LogIn';
 import Universitet from './Universitet';
-import University_registration from './University_registration';
+import University_registration from './NewUniversities/University_registration';
+import NewUniversity from './NewUniversities/NewUniversity';
 
 
 
@@ -29,7 +30,7 @@ function App() {
   <Route path='/signup' element={<SignUp />} />
   <Route path='/login' element={<LogIn />} />
   <Route path='/universitet' element={<Universitet />} />
-  <Route path='/uni-registration' element={<University_registration />} />
+  <Route path='/uni-registration' element={<NewUniversity />} />
 </Routes>
 </BrowserRouter>
     </div>

@@ -76,3 +76,6 @@ main #university-list a{
     text-decoration: none;
     color:black;
 }
+.newuni{
+    display: none;
+}

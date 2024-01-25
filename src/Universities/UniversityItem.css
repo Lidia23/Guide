@@ -1,0 +1,15 @@
+.university h6 {
+    margin: 1.8em 0;
+}
+.university img{
+    width: 314px;
+    height: 248px;
+}
+
+.university  ul {
+    list-style-type: none;
+    column-count: 2;
+}
+.university  ul  li  Card {
+    text-decoration: none;
+}

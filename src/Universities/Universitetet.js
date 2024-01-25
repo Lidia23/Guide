@@ -2,12 +2,15 @@ import './Universitetet.css';
 import Menu from '../Menu';
 import Footer from '../Footer';
 import Offers from './Offers';
+import UniversityList from './UniversityList';
+import NewUniversity from '../NewUniversities/NewUniversity';
+import React, { useState } from 'react';
 
 const DUMMY_UNI = [
     {
         id: 'u1',
         image: "../images/university-images/fakulteti-i-ekonomise.png",
-        name: 'University of Tirana',
+        name: "University of Tirana",
         offers: <Offers />,
     },
     {
@@ -55,12 +58,12 @@ const DUMMY_UNI = [
 
 ];
 export default function Universitetet() {
-    // const [universities, setUniversities] = useState(DUMMY_UNI);
-    // const addExpenseHandler = university => {
-    //     setUniversities(prevUniversities => {
-    //     return ([university, ...prevUniversities]);
-    //   });
-    // }
+    const [universities, setUniversities] = useState(DUMMY_UNI);
+    const addUniHandler = university => {
+        setUniversities(prevUniversities => {
+        return ([university, ...prevUniversities]);
+      });
+    }
     return (
         <div>
             <Menu />
@@ -74,46 +77,8 @@ export default function Universitetet() {
                     </div>
                 </div>
                 <section id="university-list">
-                    <a href="universitet"><div class="university">
-                        <img src={DUMMY_UNI[0].image} alt="" />
-                        <h6>{DUMMY_UNI[0].name}</h6>
-                        <Offers />
-                    </div></a>
-                    <a href="university/polytechnic-university-of-tirana.html"><div class="university">
-                        <img src="../images/university-images/politechnic-university-of-tirana.jpg" alt="" />
-                        <h6>Polytechnic University of Tirana</h6>
-                        <Offers />
-                    </div></a>
-                    <a href="university/linnaeus-university.html"><div class="university">
-                        <img src="../images/university-images/linnaeus-university.png" alt="" />
-                        <h6>Linnaeus University</h6>
-                        <Offers />
-                    </div></a>
-                    <a href="university/university-of-bologna.html"><div class="university">
-                        <img src="../images/university-images/university-of-bologna.png" alt="" />
-                        <h6>University of Bologna</h6>
-                        <Offers />
-                    </div></a>
-                    <a href="university/technical-university-of-munich.html"><div class="university">
-                        <img src="../images/university-images/technical-university-of-munich.png" alt="" />
-                        <h6>Technical University of Munich</h6>
-                        <Offers />
-                    </div></a>
-                    <a href="university/university-of-zurich.html"><div class="university">
-                        <img src="../images/university-images/university-of-zurich.png" alt="" />
-                        <h6>University of Zurich</h6>
-                        <Offers />
-                    </div></a>
-                    <a href="university/university-of-warwick.html"><div class="university">
-                        <img src="../images/university-images/university-of-warwick.png" alt="" />
-                        <h6>University of Warwick</h6>
-                        <Offers />
-                    </div></a>
-                    <a href="university/university-of-helsinki.html"><div class="university">
-                        <img src="../images/university-images/university-of-helsinki.png" alt="" />
-                        <h6>University of Helsinki</h6>
-                        <Offers />
-                    </div></a>
+                    <NewUniversity onAddUni={addUniHandler} />
+                    <UniversityList items={universities} />
                 </section>
             </main>
             <Footer />
