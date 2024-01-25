@@ -23,7 +23,11 @@ export default function University_registration() {
 
                         <section class="col-12 col-sm-6 col-md-11">
                             <form class="form-container ">
-
+                                <div class="form-group" >
+                                    <label for="exch_ptogram" class="h4 font-weight-bold" >Name:</label>
+                                    <input type="text" class="form-control" id="exch_program" aria-describeby="usernameHelp" placeholder="e.g. Exchange Program in Computer Science" />
+                                    <br />
+                                </div>
                                 <div class="form-group ">
                                     <label for="about_uni" class="h4 font-weight-bold">About University</label>
                                     <textarea class="form-control " id="about_uni" rows="12" placeholder="Give a description about the university(no limited in size)"></textarea>
