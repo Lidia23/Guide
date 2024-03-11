@@ -14,7 +14,6 @@ import University_registration from './NewUniversities/University_registration';
 import NewUniversity from './NewUniversities/NewUniversity';
 
 
-
 function App() {
   return (
     <div className="App">

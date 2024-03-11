@@ -1,16 +1,23 @@
-import React, { useState } from 'react';
 import './UniversityItem.css';
-// import Card from '../UI/Card';
 import Offers from './Offers';
 
-function UniversityItem(props) {
-
+export default function UniversityItem({ unis }) { //fallbackText, isLoading, loadingText, onSelect
+    console.log(unis);
     return (
-            <a href="universitet" class="university">
-                <img src={props.image} alt="" />
-                <h6>{props.name}</h6>
-                <Offers />
-            </a>
+                unis.map((value, key) => {
+                    return(
+                        <a href="universitet" class="university" key={key.id}>
+                        <img src={`http://localhost:3001/posts/${value.uniimage}`} alt="" />
+                        <h6>{value.uniname}</h6>
+                        <Offers />
+                    </a>
+                    )
+                    })
     );
 }
-export default UniversityItem;
+
+// {/* {isLoading && <p className="fallback-text">{loadingText}</p>}
+//             {!isLoading && unis.length === 0 && <p className="fallback-text">{fallbackText}</p>} */}
+//             {/* {!isLoading && unis.length > 0 && ( */}
+            
+//             {/* )} */}
