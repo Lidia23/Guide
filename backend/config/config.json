@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "$Lidi@sql23",
+    "password": "password",
     "database": "explorer",
     "host": "localhost",
     "dialect": "mysql"
