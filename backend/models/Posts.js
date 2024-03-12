@@ -7,11 +7,12 @@ module.exports = (sequelize, DataTypes) => {
         uniimage: {
             type: DataTypes.STRING,
             allowNull: true,
-        },
-        uniprograms: {
-            type: DataTypes.STRING,
-            allowNull: true,
         }
-    })
+    });
+    posts.associate = (modules) => {
+        posts.hasMany(modules.programs, {
+            onDelete: "cascade",
+        });
+    }
     return posts;
 }

@@ -1,24 +1,36 @@
 import './Universitet.css';
 import Menu from './Menu';
 import Footer from './Footer';
+import { useParams } from 'react-router';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 export default function Universitet() {
+    let { id } = useParams();
+    const [postObject, setPostObject] = useState({});
+
+    useEffect(() => {
+        axios.get(`http://localhost:3001/posts/byId/${id}`).then((response) => {
+            setPostObject(response.data);
+        });
+    }, []);
     return (
         <div>
             <Menu />
             <main>
                 <div id="banner-1">
-                    <h1>University of Tirana</h1>
+                    <h1>{postObject.uniname}</h1>
                     <div class="url-route">
-                        <a href="home" >Home</a>
+                        <a href="./home" >Home</a>
                         <span> &gt;</span>
-                        <a href="universitetet">Universities</a>
+                        <a href="./universitetet">Universities</a>
                         <span> &gt;</span>
-                        <a href="universiteti">University of Tirana</a>
+                        <a href="universiteti">{postObject.uniname}</a>
                     </div>
                 </div>
                 <section id="university-information">
-                    <h3>University of Tirana</h3>
+                    <h3>{postObject.uniname}</h3>
                     <div id="inf-img">
                         <div class="general-information">
                             <p> The University of Tirana was established by the decision of the Council of Ministers of the Republic of Albania,

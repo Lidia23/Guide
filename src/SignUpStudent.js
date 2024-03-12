@@ -1,9 +1,8 @@
-import './SignUp.css';
-import photo from './sign_up_student.png';
+import './SignUpStudent.css';
 
 export default function SignUp() {
     return (
-        <body className='sbody'>
+        <body>
             <section id="smain" class="container-fluid mt-5" >
 
 

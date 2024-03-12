@@ -35,16 +35,22 @@ export default function University_registration(props) {
 
     const initialValues = {
         uniname:"",
-        uniimage: ""
+        uniimage: "",
+        programimg: "",
+        uniprograms:""
     }
     const validationSchema = Yup.object().shape({
         uniname:Yup.string().min(3).max(20).required("You must enter a name"),
         uniimage:Yup.string().required("You must upload a photo"),
+        uniprograms:Yup.string().min(3).max(20).required("You must enter a name"),
+        programimg:Yup.string().required("You must upload a photo"),
     })
-    const handleSubmit = (data) => {
-        
-        axios.post("http://localhost:3001/posts", data).then((response) => {
+    const handleSubmit = (data1, data2) => {
+        axios.post("http://localhost:3001/posts", data1).then((response) => {
             console.log("It worked");
+        });
+        axios.post("http://localhost:3001/programs", data2).then((response) => {
+            console.log("It worked 2");
         });
     }
     return (
@@ -77,6 +83,21 @@ export default function University_registration(props) {
                                     <br />
                                     <ErrorMessage name='uniname' component="span" style={{color: "red"}}/>
                                     <Field type="text"  class="form-control" id="exch_program" name="uniname" placeholder="e.g. University of Tirana" /> {/* aria-describeby="usernameHelp" */}
+                                    <br />
+                                </div>
+                                <div class="form-group" >
+                                    <label for="exch_ptogram" class="h4 font-weight-bold" >Program Image:</label>
+                                    <br/>
+                                    <ErrorMessage name='programimg' component="span" style={{color: "red"}}/>
+                                    <Field type="file" class="form-control" id="exch_program" name="programimg"/>  {/* aria-describeby="usernameHelp" */}
+                                    {/* <img src={imgUploaded} /> */}
+                                    <br/>
+                                </div>
+                                <div class="form-group" >
+                                    <label for="exch_ptogram" class="h4 font-weight-bold" >Program Name:</label>
+                                    <br />
+                                    <ErrorMessage name='uniprograms' component="span" style={{color: "red"}}/>
+                                    <Field type="text"  class="form-control" id="exch_program" name="uniprograms" placeholder="e.g. University of Tirana" /> {/* aria-describeby="usernameHelp" */}
                                     <br />
                                 </div>
                                 {/* <div class="form-group ">

@@ -28,7 +28,7 @@ function Menu() {
                 <li class="nav-item">
                   <div class="d-flex align-items-center">
                     <form></form>
-                    <a class="nav-link ms-3" href="uni-registration">
+                    <a class="nav-link ms-3" href="login">
                       <button class="btn account" type="button">Log in</button>
                     </a>
                     <a class="nav-link ms-3" href="signup">

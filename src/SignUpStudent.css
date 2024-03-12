@@ -1,0 +1,12 @@
+#signup-student-image {
+    margin-right: 60px;
+}
+
+body{
+    background-image: linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%);
+}
+
+#uni-register {
+    margin: 50px;
+    padding: 50px;
+}
