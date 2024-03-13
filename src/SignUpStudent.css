@@ -1,12 +1,16 @@
-#signup-student-image {
+/* #signup-student-image {
     margin-right: 60px;
-}
+} */
 
-body{
+#smain {
+    height: 100vh; /* Set height to 100% of viewport height */
     background-image: linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%);
+    background-size: cover; /* This will make the background cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
-#uni-register {
+/* #uni-register {
     margin: 50px;
-    padding: 50px;
-}
+    padding: 50px; */
+/* } */

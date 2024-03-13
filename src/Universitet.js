@@ -22,11 +22,11 @@ export default function Universitet() {
                 <div id="banner-1">
                     <h1>{postObject.uniname}</h1>
                     <div class="url-route">
-                        <a href="./home" >Home</a>
+                        <a href="/home" >Home</a>
                         <span> &gt;</span>
-                        <a href="./universitetet">Universities</a>
+                        <a href="/universitetet">Universities</a>
                         <span> &gt;</span>
-                        <a href="universiteti">{postObject.uniname}</a>
+                        <a href={`/universiteti/${id}`}>{postObject.uniname}</a>
                     </div>
                 </div>
                 <section id="university-information">

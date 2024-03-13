@@ -28,10 +28,10 @@ function Menu() {
                 <li class="nav-item">
                   <div class="d-flex align-items-center">
                     <form></form>
-                    <a class="nav-link ms-3" href="login">
+                    <a class="nav-link ms-3" href="/login">
                       <button class="btn account" type="button">Log in</button>
                     </a>
-                    <a class="nav-link ms-3" href="signup">
+                    <a class="nav-link ms-3" href="/signup">
                       <button class="btn account" type="button">Sign Up</button>
                     </a>
                     <form class="d-flex nav-link ms-3">
@@ -56,13 +56,13 @@ function Menu() {
                 <img src={logo} class="fullLogo rounded" width="115" height="120" style={{margin: '-100px 0 0 40px'}}/>
                 <ul class="navbar-nav flex-grow-1">
                   <li class="nav-item flex-grow-1">
-                    <a class="nav-link w-100 text-center navHeaderItem" href="home">Home</a>
+                    <a class="nav-link w-100 text-center navHeaderItem" href="/home">Home</a>
                   </li>
                   <li class="nav-item flex-grow-1">
-                    <a class="nav-link w-100 text-center navHeaderItem" href="about">About Us</a>
+                    <a class="nav-link w-100 text-center navHeaderItem" href="/about">About Us</a>
                   </li>
                   <li class="nav-item flex-grow-1">
-                    <a class="nav-link w-100 text-center navHeaderItem" href="universitetet">Universities</a>
+                    <a class="nav-link w-100 text-center navHeaderItem" href="/universitetet">Universities</a>
                   </li>
                   <li class="dropdown nav-item flex-grow-1">
                     <a class="nav-link w-100 text-center navHeaderItem dropdown-toggle" type="button"
@@ -89,10 +89,10 @@ function Menu() {
                     </ul>
                   </li>
                   <li class="nav-item flex-grow-1">
-                    <a class="nav-link w-100 text-center navHeaderItem" href="blog">Blog</a>
+                    <a class="nav-link w-100 text-center navHeaderItem" href="/blog">Blog</a>
                   </li>
                   <li class="nav-item flex-grow-1">
-                    <a class="nav-link w-100 text-center navHeaderItem" href="contact">Contacts</a>
+                    <a class="nav-link w-100 text-center navHeaderItem" href="/contact">Contacts</a>
                   </li>
                 </ul>
               </div>

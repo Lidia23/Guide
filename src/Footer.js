@@ -41,7 +41,7 @@ function Footer() {
                 <div>
                   <img alt="" class="rectangle-29" src="https://static.overlay-tech.com/assets/fa171ba1-6cbf-4b4a-aca1-2e0e623773bf.png" />
                   <div class="flex-wrapper-nine">
-                    <p class="recent-blog"><a id="nav" href="#">Even the all-powerful Pointing has no control about</a>
+                    <p class="recent-blog"><a id="nav" href="/#">Even the all-powerful Pointing has no control about</a>
                     </p>
                     <div class="flex-wrapper-eleven">
                       <img alt="" class="icon-calendar" src="https://static.overlay-tech.com/assets/a2d87e17-af5e-4d1d-a2fb-98dd2bffd1dc.svg" />
@@ -58,7 +58,7 @@ function Footer() {
                 <div>
                   <img alt="" class="rectangle-29" src="https://static.overlay-tech.com/assets/53a753f1-d447-41b1-a292-43f9299fabd5.png" />
                   <div class="flex-wrapper-nine">
-                    <p class="recent-blog"><a id="nav" href="#">Even the all-powerful Pointing has no control about</a>
+                    <p class="recent-blog"><a id="nav" href="/#">Even the all-powerful Pointing has no control about</a>
 
                     </p>
                     <div class="flex-wrapper-eleven">
@@ -79,12 +79,12 @@ function Footer() {
             <div class="col-md-6 col-lg-3">
               <h2 className='ull'>Links</h2>
               <ul>
-                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="home">Home</a></li>
-                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="about">About Us</a></li>
-                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="universitetet">Universities</a></li>
-                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="projectlist">Study Programs</a></li>
-                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="blog">Blogs</a></li>
-                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="contact">Contact</a></li>
+                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="/home">Home</a></li>
+                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="/about">About Us</a></li>
+                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="/universitetet">Universities</a></li>
+                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="/projectlist/:id">Study Programs</a></li>
+                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="/blog">Blogs</a></li>
+                <li><i class="bi bi-arrow-right-short"></i><a id="nav" href="/contact">Contact</a></li>
               </ul>
             </div>
 
@@ -104,7 +104,7 @@ function Footer() {
               <div class="btn-group me-2" role="group" aria-label="First group">
                 <a
                   class="btn btn-primary btn-lg btn-floating twitter btn-circle"
-                  href="#!"
+                  href="/#!"
                   role="button"
                 ><i class="bi bi-twitter"></i>
                 </a>
@@ -112,7 +112,7 @@ function Footer() {
               <div class="btn-group me-2" role="group" aria-label="Second group">
                 <a
                   class="btn btn-primary btn-lg btn-floating facebook"
-                  href="#!"
+                  href="/#!"
                   role="button"
                 ><i class="bi bi-facebook"></i>
                 </a>
@@ -120,7 +120,7 @@ function Footer() {
               <div class="btn-group me-2" role="group" aria-label="Third group">
                 <a
                   class="btn btn-primary btn-lg btn-floating instagram"
-                  href="#!"
+                  href="/#!"
                   role="button"
                 ><i class="bi bi-instagram"></i>
                 </a>

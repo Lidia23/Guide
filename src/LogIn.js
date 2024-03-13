@@ -1,12 +1,13 @@
+import { Col, Row } from 'react-bootstrap';
 import './LogIn.css';
 import photo from './sign_up_student.png';
 
 export default function LogIn() {
     return (
-        <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-6">
-                    <div className="container login">
+        <section className="container d-flex align-items-center text-center cont">
+            <Row className="row container-fluid">
+                <Col className="col-md-6">
+                    <div className="login">
                         <form action="#" className="form-container need-validation" method="post" id='formi'>
                             <div className="form-group">
                                 <h4 className="text-center font-weight-bold"> Welcome back! </h4>
@@ -53,11 +54,11 @@ export default function LogIn() {
                             <p id="length" className="invalid">At least 8 Character</p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-6 d-none d-md-block">
+                </Col>
+                <Col className="col-md-6 d-none d-md-block">
                     <img className="img-fluid" src={photo} alt="Vector Image for design" />
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </section>
     );
 }

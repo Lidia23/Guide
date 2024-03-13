@@ -4,7 +4,7 @@ import Main from './Main';
 import Project_List from './Program-List';
 import About from './About';
 import Blog from './Blog';
-import { BrowserRouter, Link, Route, Routes, Switch } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Universitetet from './Universities/Universitetet';
 import Contact from './Contact';
 import SignUp from './SignUp.jsx';

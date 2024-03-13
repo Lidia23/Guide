@@ -4,13 +4,16 @@
     width:40%;
 }
 
-.container.login{
+.cont{
+    height: 100vh;
+}
+
+
+
+.login{
     background-color:white;
     padding:20px;
     text-align:left;
-    margin-top: 80px;
-
-
 }
 
 #validation_box{
@@ -22,8 +25,6 @@
     padding:10px;
     margin-top:20px;
     text-align:left;
-
-
 }
 
 #validation_box p{

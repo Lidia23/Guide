@@ -21,11 +21,11 @@ function Main() {
                 <div id="program-banner">
                     <h1>Programs</h1>
                     <div class="url-route">
-                        <a href="home" >Home</a>
+                        <a href="/home" >Home</a>
                         <span> &gt;</span>
-                        <a href="universitetet">Universities</a>
+                        <a href="/universitetet">Universities</a>
                         <span> &gt;</span>
-                        <a href="projectlist">Programs</a>
+                        <a href={`/projectlist/${id}`}>Programs</a>
                     </div>
                 </div>
                 <section id="program-list">

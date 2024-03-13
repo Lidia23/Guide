@@ -2,8 +2,7 @@ import './SignUpStudent.css';
 
 export default function SignUp() {
     return (
-        <body>
-            <section id="smain" class="container-fluid mt-5" >
+            <section id="smain" className='container-fluid' >
 
 
                 <section class="row justify-content-center">
@@ -11,7 +10,7 @@ export default function SignUp() {
                     {/* <div id="signup-student-image"><img src={photo} width="604px" height="619px" /></div> */}
 
                     <section class="col-12 col-sm-6 col-md-4">
-                        <form class="form-container need-validation">
+                        <form class="form-container need-validation mt-5">
 
                             <div class="form-group">
                                 <h4 class="text-center font-weight-bold"> Create new account </h4>
@@ -120,6 +119,5 @@ export default function SignUp() {
         </section>
     </section >
   </section >
-</body >
     )
 }
